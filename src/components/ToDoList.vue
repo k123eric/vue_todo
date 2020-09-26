@@ -39,7 +39,7 @@ export default {
       });
     },
     add() {
-      if (!this.newItem) {
+      if (empty(this.newItem)) {
         window.alert("請輸入內容");
         return;
       }
